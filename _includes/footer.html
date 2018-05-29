@@ -4,15 +4,15 @@
             <h2 class="text-center pb-3">Contact us today to discuss secure storage of your vehicle</h2>
             <div class="row">
                 <div class="col col-lg-6 col-12 pb-5">
-                    <form>
+                    <form action="https://formspree.io/admin@majestic-motors.co.uk" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" name="customer-name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address">
+                            <input type="email" class="form-control" name="email" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                            <select class="form-control">
+                            <select class="form-control" name="storage-type">
                                 <option value="" disabled selected>Choose service</option>
                                 <option>Car storage</option>
                                 <option>Motorbike storage</option>
@@ -20,8 +20,10 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Your message</label>
-                            <textarea class="form-control" id="message" rows="5"></textarea>
+                            <textarea class="form-control" id="message" name="customer-message" rows="5"></textarea>
                         </div>
+                        <input type="hidden" name="_next" value="https://www.majestic-storage.co.uk/thanks" />
+                        <input type="hidden" name="_subject" value="Storage enquiry" />
                         <button type="submit" class="btn btn-primary"><span class="sr-only">Send</span></button>
                     </form>
                 </div>
@@ -34,26 +36,22 @@
     <div class="info pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col col-12 col-md-4">
+                <div class="col col-12 col-md-6">
                     <h3>Get in touch</h3>
                     <p class="mt-2">
                         <em>Tel.</em> <span class="phone-number"><a href="tel:+441926658923">01926 658923</a></span><br/>
-                        <em>Email.</em> <span class="email"><a href="mailto:info@majestic-motors.co.uk">info@majestic-motors.co.uk</a></span>
+                        <em>Email.</em> <span class="email"><a href="mailto:admin@majestic-motors.co.uk">admin@majestic-motors.co.uk</a></span>
                     </p>
                 </div>
-                <div class="col col-12 col-md-4">
+                <div class="col col-12 col-md-6">
                     <h3>Where to find us</h3>
                     <p class="mt-2">Near to <em>Birmingham</em>, Coventry, Warwick, Leamington Spa, <em>Oxford</em>, Banbury, and the <em>Cotswolds</em></p>
-                </div>
-                <div class="col col-12 col-md-4">
-                    <h3>Come and see us</h3>
-                    <p class="mt-2">Visiting <em>Majestic Storage</em> is by appointment only</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="tail text-center pt-3 pb-5">
-        <a>terms & conditions</a> | <a>privacy policy</a>
+        &copy; Majestic Storage Limited 2018 | All rights reserved
     </div>
 </footer>
 

@@ -1,8 +1,8 @@
 s3_id: <%= ENV['MM_S3_ID'] %>
 s3_secret: <%= ENV['MM_S3_SECRET'] %>
-s3_bucket: staging.majestic-storage.co.uk
+s3_bucket: www.majestic-storage.co.uk
 cloudfront_distribution_id: <%= ENV['MM_CF_DIST_ID'] %>
-s3_endpoint: eu-west-1
+s3_endpoint: eu-west-2
 gzip: true
 ignore_on_server: .well-known
 
@@ -17,6 +17,8 @@ ignore_on_server: .well-known
 # max_age:
 #   "assets/*": 6000
 #   "*": 300
+max_age: 1200
+cache_control: public, no-transform, max-age=1200, s-maxage=1200
 
 # gzip:
 #   - .html
@@ -34,6 +36,7 @@ exclude_from_upload:
    - Gemfile
    - Gemfile.lock
    - _config.yaml
+
 
 # s3_reduced_redundancy: true
 

@@ -24,3 +24,9 @@ github_username:  robotrobot
 # Build settings
 markdown: kramdown
 theme: minima
+
+plugins_dir:
+  - jekyll-compress-images
+
+compress_images:
+  images_path: "img/*.{gif,png,jpg,jpeg,svg}"
