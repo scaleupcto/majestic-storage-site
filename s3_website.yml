@@ -35,7 +35,7 @@ exclude_from_upload:
    - README.md
    - Gemfile
    - Gemfile.lock
-   - _config.yaml
+   - _config.yml
 
 
 # s3_reduced_redundancy: true

@@ -18,7 +18,7 @@ email: ben@majestic-motors.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   Car &amp; motorbike storage located near Birmingham, Coventry, Warwick, Oxford, Leamington Spa, Banbury
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.majestic-storage.co.uk" # the base hostname & protocol for your site
+url: "https://www.majesticcarstorage.co.uk" # the base hostname & protocol for your site
 github_username:  robotrobot
 
 # Build settings
@@ -30,3 +30,5 @@ plugins_dir:
 
 compress_images:
   images_path: "img/*.{gif,png,jpg,jpeg,svg}"
+
+exclude: ["README.md","s3_website.yml","Gemfile","Gemfile.lock"]
