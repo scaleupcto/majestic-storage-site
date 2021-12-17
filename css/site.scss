@@ -386,3 +386,22 @@ footer {
   }
 }
 
+.arrow-right {
+  background-color: $majestic-burgandy;
+  color: $majestic-ivory;
+  box-shadow: 0 0 3px 2px rgba(0,0,0,0.8);
+  height: 100px;
+  left: -50px;
+  position: absolute;
+  top: -50px;
+  width: 100px;
+
+  -webkit-transform: rotate(-45deg);
+}
+
+.fa-times:before {
+  color: red;
+}
+.fa-check:before {
+   color: green;
+ }
